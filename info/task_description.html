@@ -25,6 +25,7 @@
 <p>
     You should help Nicola to write a function for determination of ghosts age.
     You are given an opacity measurement as an number (from 0 to 10000 inclusively).
+    The ghosts are not older than 5000 years.
 </p>
 
 <p>
@@ -43,10 +44,12 @@
     <p>
         <strong>Example:</strong>
     </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
+    <pre class="brush: python">checkio(10000) == 0
+checkio(9999) == 1
+checkio(9997) == 2
+checkio(9994) == 3
+checkio(9995) == 4
+checkio(9990) == 5</pre>
 </div>
 
 <p class="for_info_only">
