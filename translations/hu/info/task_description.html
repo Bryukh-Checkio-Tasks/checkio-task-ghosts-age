@@ -1,0 +1,71 @@
+<p>
+    Nikolettának szabad sok szabadideje kerekedett és úgy gondolta, hogy szellemek
+    kutatásával fogja azt eltölteni. Ö meg akarja találni a szellemek korának 
+    meghatározási módját. Az ősi tekercsek szerint, a szellemek kora azok 
+    átlátszóságával van összefüggésben. Nikoletta készített egy átlátszóság-mérési 
+    skálát 10000-től 0-ig, ahol a 10000 – egy egészen nem átlátszó „újszülött” szellem 
+    (0 éves) és a 0 – egy teljesen láthatatlan szellem (kora ismeretlen).
+</p>
+
+
+<p>
+    Sok kísérletezés után, Nikoletta úgy tűnik megtalálta az összefüggést. A szellem 
+    minden egyes „születésnapjával” annak átlátszósága a korával egyenlő mennyiségű 
+    egységgel csökken, ha a kora egyenlő a Fibonacci-számok egyikével 
+    (<a href="http://hu.wikipedia.org/wiki/Fibonacci-sz%C3%A1mok">bővebben itt</a>),
+    különben meg, –  növekszik egy egységgel.
+</p>
+<p>
+    Például:<br>
+    Az „újszülött” szellem átlátszósága – 10000 egység.<br>
+    1 éves korában – 10000 – 1 = 9999 (az 1-es – az Fibonacci-szám).<br>
+    2 éves korában – 9999 – 2 = 9997 (a 2-es – az Fibonacci-szám).<br>
+    3 éves korában – 9997 – 3 = 9994 (a 3-as – az Fibonacci-szám).<br>
+    4 éves korában – 9994 + 1 = 9995 (a 4-es – az nem Fibonacci-szám).<br>
+    5 éves korában – 9995 – 5 = 9990 (az 5-ös – az Fibonacci-szám).<br>
+</p>
+
+
+<p>
+    Segítsünk Nikolettának készíteni egy függvényt, amely meghatározza a szellem korát 
+    annak átlátszóságának ismeretében. Meg van adva az átlátszóság mértéke, ami egy szám 
+    0-tól 10000-ig bezárólag. A szellemek nem lehetnek 5000 évnél idősebbek, mivel az után 
+    egyszerűen eltűnnek (komolyan, ez egy tudományosan bizonyított tény).
+</p>
+
+<p>
+    <strong>
+        Ez a feladat Helloween-nek van szentelve, ezért „varázslatos” vagy „rémísztő” megoldásokat várunk.</strong>
+</p>
+<p>
+    <strong>Bemeneti adatok: </strong> Az átlátszóság mértéke egy egész számként (int).
+</p>
+
+<p>
+    <strong>Kimeneti adatok: </strong> A szellem kora egész számként (int).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Példák:</strong>
+    </p>
+    <pre class="brush: python">checkio(10000) == 0
+checkio(9999) == 1
+checkio(9997) == 2
+checkio(9994) == 3
+checkio(9995) == 4
+checkio(9990) == 5</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Alkalmazása: </strong>
+    E feladatcélja – a szórakozás. Reméljük, hogy sok egyedi és vidám megoldás születik majd.
+</p>
+
+
+<p>
+    <strong>Előfeltételek:</strong><br>
+    kor &lt; 5000<br>
+    0 &lt; átlátszóság &le; 10000
+</p>
