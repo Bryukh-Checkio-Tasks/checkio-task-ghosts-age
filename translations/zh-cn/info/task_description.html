@@ -1,0 +1,58 @@
+<p>
+    尼古拉花了一点时间研究鬼魂。 他正试图想出一个新的方法来确定这些鬼是多大年纪。 他知道他们的年龄与他们的不透明度有某种关系。 为了测量他们的不透明度，尼古拉用10000单位到0单位的比例，其中10000是一个完全不透明的新生鬼（0岁），0是完全透明的鬼（未知年龄）。
+</p>
+
+
+<p>
+经过一番试验，尼古拉认为他已经发现了幽灵混浊的规律。 在每个生日，当年龄是菲波那契数时，鬼的不透明度会减少相当于它的年龄的单位数（<a href="http://en.wikipedia.org/wiki/Fibonacci_number">请参阅这里</a>）如果不是这样，增加1。
+</p>
+<p>
+    例如:<br>
+    A newborn ghost -- 10000 units of opacity.<br>
+    1 year -- 10000 - 1 = 9999 (1 is a Fibonacci number).<br>
+    2 year -- 9999 - 2 = 9997 (2 is a Fibonacci number).<br>
+    3 year -- 9997 - 3 = 9994 (3 is a Fibonacci number).<br>
+    4 year -- 9994 + 1 = 9995 (4 is not a Fibonacci number).<br>
+    5 year -- 9995 - 5 = 9990 (5 is a Fibonacci number).<br>
+</p>
+
+
+<p>
+帮助尼古拉写一个函数，将根据其不透明度来确定幽灵的年龄。 您将得到不透明度测量值，范围从0到10000。 鬼不能超过5000年，因为它们在这么长时间之后就消失了（真的！）。
+</p>
+
+<p>
+    <strong>这是一个万圣节任务，所以你应该尝试写一个“魔术”或“可怕”的解决方案。 请不要写“常规”解决方案.</strong>
+</p>
+<p>
+    <strong>输入: </strong> 一个鬼魂透明值（整数）
+</p>
+
+<p>
+    <strong>输出: </strong> 鬼魂的年龄（整数）
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <pre class="brush: python">checkio(10000) == 0
+checkio(9999) == 1
+checkio(9997) == 2
+checkio(9994) == 3
+checkio(9995) == 4
+checkio(9990) == 5</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    This task was made for some spooky fun! We hope to see your funny, tricky and creative solutions!
+</p>
+
+
+<p>
+    <strong>Precondition:</strong><br>
+    age &lt; 5000<br>
+    0 &lt; opacity &le; 10000
+</p>
